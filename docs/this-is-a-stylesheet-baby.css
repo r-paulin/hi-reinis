@@ -6,13 +6,65 @@
     --gray-dark: #212121;
     --gray-light: #9E9E9E;
     --light: #FAFAFA;
-    --space: 20px;
-    --space2x: 40px;
-    --space3x: 60px;
-    --space4x: 80px;
-    --space5x: 100px;
+    --space: 1.25em;
+    --space2x: 1.75em;
+    --space3x: 2.25em;
+    --space4x: 2.75em;
+    --space5x: 3.25em;
 }
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--light);
+    margin: var(--space)
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+    grid-column-gap: var(--space);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-row: auto;
+}
+
+.inline-grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.col-4 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.col-3 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.col-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+@media only screen and (max-width: 600px) {
+    #grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .col-4 {
+        grid-column-start: 1;
+            grid-column-end: span 2;
+
+    }
 }
