@@ -120,7 +120,9 @@ ul {
 }
 
 .grid-about {
-    background: var(--primary)
+    background-image: -o-linear-gradient(left bottom, #1a237e, #172071, #141c64, #111957, #0f154a);
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#1a237e), color-stop(#172071), color-stop(#141c64), color-stop(#111957), to(#0f154a));
+    background-image: linear-gradient(to right top, #1a237e, #172071, #141c64, #111957, #0f154a);
 }
 
 .grid-about h3,
@@ -160,7 +162,6 @@ ul {
     grid-row: 4;
     padding-top: var(--space5x);
     padding-bottom: var(--space);
-    background: var(--primary)
 }
 
 .about .h5 {
