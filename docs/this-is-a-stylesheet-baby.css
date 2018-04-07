@@ -181,6 +181,14 @@ a:focus {
     .grid, .grid-about {
         grid-template-columns: repeat(auto-fit, 60px);
     }
+    
+    .grid {
+        margin: 0 20px
+    }
+    
+    .grid-about {
+        padding: 0 20px
+    }
 
     .intro,
     .story-title,
