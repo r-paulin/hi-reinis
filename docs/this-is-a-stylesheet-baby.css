@@ -26,10 +26,11 @@
 body {
     font-family: var(--primary-font);
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.6;
     background-color: var(--light);
     color: var(--gray);
+    scroll-behavior: smooth;
     margin: 0
 }
 
@@ -47,7 +48,7 @@ h6,
 .h6 {
     color: var(--gray-dark);
     font-family: var(--primary-font);
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 0;
     margin-bottom: 0.5em
 }
@@ -89,7 +90,6 @@ h6,
 
 a {
     color: var(--primary);
-    font-weight: 600
 }
 
 a:hover {
@@ -142,7 +142,7 @@ ul {
 .intro {
     grid-column: 2/5;
     grid-row: 1;
-    padding-top: calc(2 * var(--space5x));
+    padding-top: calc(4 * var(--space5x));
     padding-bottom: var(--space2x);
 
 }
@@ -202,7 +202,7 @@ hr {
 
 .about a {
     color: var(--light);
-    font-weight: 400
+    font-weight: 500;
 }
 
 .about a:hover {
